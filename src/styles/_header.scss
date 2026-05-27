@@ -1,0 +1,35 @@
+.header {
+  padding: 24px 0;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &__phone {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/Phone-number.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/Icon-Burger-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

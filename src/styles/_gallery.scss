@@ -1,0 +1,48 @@
+.gallery {
+  padding-top: 96px;
+
+  &__title {
+    padding-bottom: 47px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: $main-text-color;
+  }
+
+  &__catalog {
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__images {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 16px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: $main-text-color;
+  }
+
+  &__button {
+    & button {
+      background-color: $button-background;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      padding: 14.5px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0;
+      color: $white-color;
+    }
+  }
+}
