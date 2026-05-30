@@ -8,10 +8,20 @@
 @import './contact';
 @import './footer';
 @import './menu';
+@import './page';
 
 .container {
-  max-width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   padding: 0 20px;
+
+  @media (min-width: 744px) {
+    padding: 0 72px;
+  }
+
+  @media (min-width: 1260px) {
+    padding: 0 120px;
+    max-width: 1260px;
+  }
 }

@@ -1,6 +1,10 @@
 .recommended {
   margin-top: 64px;
 
+  @media (min-width: 1260px) {
+    margin-top: 96px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 32px;
@@ -14,10 +18,23 @@
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+
+    @media (min-width: 744px) {
+      width: calc((100% - 40px) / 2);
+    }
+
+    @media (min-width: 1260px) {
+      width: calc((100% - 80px) / 3);
+    }
+  }
+
+  &__img {
+    max-width: 100%;
   }
 
   &__image {
     padding-bottom: 24px;
+    width: 100%;
   }
 
   &__name {

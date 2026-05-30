@@ -9,6 +9,10 @@
     height: 200px;
     margin: 0 -20px;
     object-fit: cover;
+
+    @media (min-width: 1260px) {
+      margin-top: 96px;
+    }
   }
 
   &__title {

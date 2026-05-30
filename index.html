@@ -1,6 +1,9 @@
 <!--region head-->
 <!doctype html>
-<html lang="en">
+<html
+  class="page"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -18,7 +21,7 @@
     ></script>
   </head>
   <!--endregion-->
-  <body>
+  <body class="page__body">
     <header class="header">
       <div class="header__container container">
         <a
@@ -43,7 +46,7 @@
       </div>
     </header>
     <aside
-      class="sidebar"
+      class="sidebar page__menu"
       id="menu"
     >
       <div class="sidebar_container container">
@@ -122,11 +125,13 @@
           <h2 class="recommended__title">Recommended</h2>
           <div class="recommended__cards">
             <div class="recommended__card">
-              <img
-                src="./src/images/title.svg"
-                alt="Product 1"
-                class="recommended__image"
-              />
+              <div class="recommended__img">
+                <img
+                  src="./src/images/title.svg"
+                  alt="Product 1"
+                  class="recommended__image"
+                />
+              </div>
               <h3 class="recommended__name">BEOSOUND A5</h3>
               <p class="recommended__description">
                 Huge sound anywhere – in the home or outdoors. Beosound A5 is a
@@ -168,7 +173,11 @@
       </section>
       <section class="gallery">
         <div class="gallery__container container">
-          <h2 class="categories__title">Sound. Vision. <br> It’s your pick.</h2>
+          <h2 class="categories__title">
+            Sound. Vision.
+            <br />
+            It’s your pick.
+          </h2>
           <div class="gallery__catalog">
             <div class="gallery__category">
               <div class="gallery__images">
@@ -228,7 +237,6 @@
           class="image__photo"
         />
         <div class="image__container container">
-          npm
           <h2 class="image__title">Timeless, for 50 years and counting</h2>
           <p class="image__description">
             Bang & Olufsen is expanding its Recreated Classics Program with the
@@ -245,6 +253,7 @@
             action="#"
             method="POST"
             class="contact__form"
+            onsubmit="this.reset(); return false;"
           >
             <div class="contact__field">
               <input
