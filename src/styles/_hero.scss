@@ -8,9 +8,18 @@
   display: flex;
   align-items: flex-end;
 
-  @media (min-width: 1260px) {
-    padding-bottom: 64px;
+  @media (min-width: 744px) {
+    height: 993px;
+    padding: 64px 0;
+    background-image: url('../images/hero744.png');
   }
+
+  @media (min-width: 1260px) {
+    height: 720px;
+    padding: 64px 0;
+    background-image: url('../images/hero1260.png');
+  }
+
   &__container {
     width: 100%;
   }
@@ -20,6 +29,12 @@
     line-height: 100%;
     color: #fff;
     font-weight: 700;
+
+    @media (min-width: 744px) {
+      font-size: 48px;
+      letter-spacing: 0;
+      line-height: 100%;
+    }
 
     @media (min-width: 1260px) {
       font-size: 56px;

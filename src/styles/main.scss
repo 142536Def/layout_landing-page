@@ -1,4 +1,5 @@
 @import './variable';
+@import './layout';
 @import './reset';
 @import './header';
 @import './hero';
@@ -9,19 +10,3 @@
 @import './footer';
 @import './menu';
 @import './page';
-
-.container {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: 744px) {
-    padding: 0 72px;
-  }
-
-  @media (min-width: 1260px) {
-    padding: 0 120px;
-    max-width: 1260px;
-  }
-}

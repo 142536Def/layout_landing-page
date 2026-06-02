@@ -1,5 +1,6 @@
 .contact {
-  padding-top: 64px;
+  max-width: 498px;
+  width: 100%;
 
   &__title {
     font-weight: 700;
@@ -8,6 +9,10 @@
     color: $main-text-color;
     letter-spacing: 0;
     padding-bottom: 48px;
+
+    @media (min-width: 744px) {
+      padding-top: 56px;
+    }
   }
 
   &__field {

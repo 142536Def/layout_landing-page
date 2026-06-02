@@ -3,15 +3,25 @@
   padding-bottom: 64px;
 
   &__container {
+    @media (min-width: 744px) {
+      justify-content: space-between;
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+
+    @media (min-width: 1260px) {
+      display: flex;
+      align-items: center;
+      gap: 111px;
+    }
+  }
+
+  &__contacts {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-    @media (min-width: 744px) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+    max-width: 411px;
+    width: 100%;
   }
 
   &__laible {

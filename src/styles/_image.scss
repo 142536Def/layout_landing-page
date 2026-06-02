@@ -1,7 +1,22 @@
 .image {
   margin-top: 96px;
-  padding-bottom: 48px;
+
   background-color: $image-footer-background;
+
+  &__container {
+    padding-block: 48px;
+
+    @media (min-width: 744px) {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-block: 120px;
+    }
+
+    @media (min-width: 1260px) {
+      gap: 111px;
+    }
+  }
 
   &__photo {
     display: block;
@@ -12,6 +27,7 @@
 
     @media (min-width: 1260px) {
       margin-top: 96px;
+      height: 460px;
     }
   }
 
@@ -22,6 +38,15 @@
     color: $main-text-color;
     padding-top: 24px;
     padding-bottom: 16px;
+
+    @media (min-width: 744px) {
+      max-width: 287px;
+    }
+
+    @media (min-width: 1260px) {
+      max-width: 498px;
+      height: 96px;
+    }
   }
 
   &__description {
@@ -30,6 +55,14 @@
     line-height: 140%;
     color: $main-text-color;
     letter-spacing: 0.15px;
-    padding-bottom: 48px;
+
+    @media (min-width: 744px) {
+      max-width: 287px;
+    }
+
+    @media (min-width: 1260px) {
+      max-width: 411px;
+      height: 110px;
+    }
   }
 }

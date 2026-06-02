@@ -1,8 +1,12 @@
 .recommended {
   margin-top: 64px;
 
+  @media (min-width: 744px) {
+    margin-top: 120px;
+  }
+
   @media (min-width: 1260px) {
-    margin-top: 96px;
+    margin-top: 120px;
   }
 
   &__title {
@@ -12,6 +16,12 @@
     color: $main-text-color;
     letter-spacing: 0;
     padding-bottom: 48px;
+
+    @media (min-width: 744px) {
+      font-size: 40px;
+      line-height: 40px;
+      padding-bottom: 56px;
+    }
   }
 
   &__cards {
@@ -19,12 +29,19 @@
     gap: 40px;
     flex-wrap: wrap;
 
-    @media (min-width: 744px) {
-      width: calc((100% - 40px) / 2);
+    @media (min-width: 1260px) {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
     }
+  }
+
+  &__card {
+    width: 100%;
 
     @media (min-width: 1260px) {
-      width: calc((100% - 80px) / 3);
+      max-width: 324px;
     }
   }
 
@@ -53,6 +70,10 @@
     color: $main-text-color;
     letter-spacing: 0;
     padding-bottom: 12px;
+
+    @media (min-width: 744px) {
+      padding-bottom: 32px;
+    }
   }
 
   &__price {
