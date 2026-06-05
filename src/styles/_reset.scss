@@ -21,6 +21,10 @@ a:visited {
   text-decoration: none;
 }
 
+a {
+  transition: all 0.3s ease;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -108,4 +112,8 @@ legend {
 
 input[type='file'] {
   max-width: 100%;
+}
+
+button {
+  transition: all 0.3s ease;
 }

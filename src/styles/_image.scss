@@ -20,10 +20,16 @@
 
   &__photo {
     display: block;
-    width: calc(100% + 40px);
+    width: 100%;
     height: 200px;
-    margin: 0 -20px;
     object-fit: cover;
+    background-image: url('../images/image1260.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 744px) {
+      height: 400px;
+    }
 
     @media (min-width: 1260px) {
       margin-top: 96px;

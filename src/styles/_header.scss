@@ -30,12 +30,46 @@
   align-items: center;
   gap: 24px;
 
+  @media (min-width: 744px) {
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+  }
+
+  &__number {
+    position: absolute;
+    width: 139px;
+    right: 100%;
+
+    opacity: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: $main-text-color;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__item:hover .nav__number {
+    opacity: 1;
+  }
+
   &__phone {
     width: 24px;
     height: 24px;
     background-image: url('../images/Phone-number.svg');
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: 744px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &__menu {
@@ -44,5 +78,14 @@
     background-image: url('../images/Icon-Burger-menu.svg');
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: 744px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__menu:hover {
+    background-image: url('../images/burgerhover.svg');
   }
 }

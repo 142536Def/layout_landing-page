@@ -14,10 +14,14 @@
 
   &__top {
     position: sticky;
-    padding: 28px 0;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: 744px) {
+    padding: 32px 0;
   }
 
   &__close {
@@ -43,6 +47,10 @@
     line-height: 22px;
     letter-spacing: 0;
     color: $main-text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__contact {

@@ -12,6 +12,10 @@
     />
     <title>Landing Page</title>
     <link
+      rel="icon"
+      href="src/images/logo.svg"
+    />
+    <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
@@ -34,14 +38,20 @@
           />
         </a>
         <nav class="nav">
-          <a
-            href="tel:+380123456789"
-            class="nav__phone"
-          ></a>
-          <a
-            href="#menu"
-            class="nav__menu"
-          ></a>
+          <div class="nav__item">
+            <span class="nav__number">+1 234 555-55-55</span>
+            <a
+              href="tel:+380123456789"
+              class="nav__phone"
+            > </a>
+          </div>
+          <div class="nav__item">
+            <a
+              href="#menu"
+              class="nav__menu"
+            ></a>
+          </div>
+
         </nav>
       </div>
     </header>
@@ -231,11 +241,7 @@
         </div>
       </section>
       <section class="image">
-        <img
-          src="src/images/image footer.png"
-          alt="Image"
-          class="image__photo"
-        />
+        <div class="image__photo"></div>
         <div class="image__container container">
           <h2 class="image__title">Timeless, for 50 years and counting</h2>
           <p class="image__description">
