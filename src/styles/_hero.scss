@@ -9,13 +9,11 @@
   align-items: flex-end;
 
   @media (min-width: 744px) {
-    height: 993px;
     padding: 64px 0;
     background-image: url('../images/hero744.png');
   }
 
   @media (min-width: 1260px) {
-    height: 720px;
     padding: 64px 0;
     background-image: url('../images/hero1260.png');
   }

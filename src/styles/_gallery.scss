@@ -57,9 +57,14 @@
     }
   }
 
+  &__link {
+    display: block;
+  }
+
   &__image {
-    width: 50%;
+    width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
 
     @media (min-width: 744px) {
       width: 100%;
@@ -72,6 +77,10 @@
       height: 324px;
       object-fit: initial;
     }
+  }
+
+  &__link:hover .gallery__image {
+    transform: scale(1.05);
   }
 
   &__name {
