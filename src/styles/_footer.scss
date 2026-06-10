@@ -39,5 +39,8 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     color: $black-color;
+    &:hover {
+      color: $gray-color;
+    }
   }
 }
