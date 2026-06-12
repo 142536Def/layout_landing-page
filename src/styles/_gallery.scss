@@ -105,15 +105,6 @@
       font-weight: 700;
       line-height: 27px;
       color: $white-color;
-      letter-spacing: 0;
-
-      background-color: $button-background;
-
-      transition: background-color 0.3s ease-in-out;
-      &:hover {
-        cursor: pointer;
-        background-color: $main-text-color;
-      }
     }
 
     @media (min-width: 1260px) {

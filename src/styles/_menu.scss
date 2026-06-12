@@ -18,24 +18,9 @@
 
   &__top {
     position: sticky;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 28px 0;
-
-    @media (min-width: 744px) {
-      padding: 32px 0;
-    }
-  }
-
-  &__logo img {
-    width: 152px;
-
-    @media (min-width: 744px) {
-      width: 228px;
-    }
   }
 
   &__close {
@@ -44,15 +29,10 @@
     width: 16px;
     height: 16px;
 
-    background-image: url('../images/vector1.svg');
+    background-image: url('../images/vector1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-    @media (min-width: 744px) {
-      width: 24px;
-      height: 24px;
-    }
   }
 
   &__nav {
@@ -90,7 +70,14 @@
       display: inline-block;
       padding-top: 16px;
       border-bottom: 1px solid $main-text-color;
-      text-decoration: none;
     }
+  }
+
+  @media (min-width: 744px) {
+    padding: 32px 0;
+  }
+
+  @media (min-width: 744px) {
+    padding: 32px 0;
   }
 }
