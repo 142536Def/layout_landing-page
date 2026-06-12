@@ -1,12 +1,36 @@
 .hero {
+  display: flex;
+  align-items: flex-end;
+
+  height: 100vh;
+  padding: 40px 0;
+
   background-image: url('../images/hero.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  padding: 40px 0;
-  display: flex;
-  align-items: flex-end;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #fff;
+
+    @media (min-width: 744px) {
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: 0;
+    }
+
+    @media (min-width: 1260px) {
+      font-size: 56px;
+      line-height: 100%;
+    }
+  }
 
   @media (min-width: 744px) {
     padding: 64px 0;
@@ -16,27 +40,5 @@
   @media (min-width: 1260px) {
     padding: 64px 0;
     background-image: url('../images/hero1260.png');
-  }
-
-  &__container {
-    width: 100%;
-  }
-
-  &__title {
-    font-size: 36px;
-    line-height: 100%;
-    color: #fff;
-    font-weight: 700;
-
-    @media (min-width: 744px) {
-      font-size: 48px;
-      letter-spacing: 0;
-      line-height: 100%;
-    }
-
-    @media (min-width: 1260px) {
-      font-size: 56px;
-      line-height: 100%;
-    }
   }
 }

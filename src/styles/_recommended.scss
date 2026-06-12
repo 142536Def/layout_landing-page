@@ -1,44 +1,42 @@
 .recommended {
   margin-top: 64px;
 
-  @media (min-width: 744px) {
-    margin-top: 120px;
-  }
-
-  @media (min-width: 1260px) {
-    margin-top: 120px;
-  }
-
   &__title {
-    font-weight: 700;
+    padding-bottom: 48px;
+
     font-size: 32px;
+    font-weight: 700;
     line-height: 32px;
     color: $main-text-color;
     letter-spacing: 0;
-    padding-bottom: 48px;
 
     @media (min-width: 744px) {
+      padding-bottom: 56px;
       font-size: 40px;
       line-height: 40px;
-      padding-bottom: 56px;
     }
   }
 
   &__cards {
     display: flex;
-    gap: 40px;
     flex-wrap: wrap;
+    gap: 40px;
 
     @media (min-width: 1260px) {
       flex-flow: row nowrap;
-      justify-content: space-between;
       gap: 24px;
       align-items: center;
+      justify-content: space-between;
     }
   }
 
   &__card {
     width: 100%;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.04);
+    }
 
     @media (min-width: 1260px) {
       max-width: 324px;
@@ -50,26 +48,28 @@
   }
 
   &__image {
-    padding-bottom: 24px;
     width: 100%;
+    padding-bottom: 24px;
   }
 
   &__name {
-    font-weight: 700;
+    padding-bottom: 8px;
+
     font-size: 18px;
+    font-weight: 700;
     line-height: 140%;
     color: $main-text-color;
     letter-spacing: 0;
-    padding-bottom: 8px;
   }
 
   &__description {
-    font-weight: 400;
+    padding-bottom: 12px;
+
     font-size: 16px;
+    font-weight: 400;
     line-height: 140%;
     color: $main-text-color;
     letter-spacing: 0;
-    padding-bottom: 12px;
 
     @media (min-width: 744px) {
       padding-bottom: 32px;
@@ -77,10 +77,18 @@
   }
 
   &__price {
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
     line-height: 140%;
     color: $main-text-color;
     letter-spacing: 0;
+  }
+
+  @media (min-width: 744px) {
+    margin-top: 120px;
+  }
+
+  @media (min-width: 1260px) {
+    margin-top: 120px;
   }
 }

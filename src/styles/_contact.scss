@@ -1,51 +1,59 @@
 .contact {
-  max-width: 498px;
   width: 100%;
+  max-width: 498px;
   margin-bottom: 40px;
 
   &__input {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    padding: 14px 14px 16px;
-    letter-spacing: 0.15px;
     width: 100%;
-    background-color: $contact-background;
+    padding: 14px 14px 16px;
     border: none;
     border-radius: 4px;
 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+    background-color: $contact-background;
+
     &:-webkit-autofill {
       box-shadow: 0 0 0 1000px $white-color inset;
+
       -webkit-text-fill-color: $main-text-color;
     }
   }
 
   &__textarea {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    padding: 14px 14px 16px;
-    letter-spacing: 0.15px;
+    resize: none;
+
     width: 100%;
-    background-color: $contact-background;
+    height: 148px;
+    padding: 14px 14px 16px;
     border: none;
     border-radius: 4px;
-    height: 148px;
-    resize: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+    background-color: $contact-background;
 
     &:-webkit-autofill {
       box-shadow: 0 0 0 1000px $white-color inset;
+
       -webkit-text-fill-color: $main-text-color;
     }
   }
 
   &__title {
-    font-weight: 700;
+    padding-bottom: 48px;
+
     font-size: 32px;
+    font-weight: 700;
     line-height: 32px;
     color: $main-text-color;
     letter-spacing: 0;
-    padding-bottom: 48px;
 
     @media (min-width: 744px) {
       padding-top: 56px;
@@ -65,15 +73,17 @@
   }
 
   &__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0;
-    color: $white-color;
-    border: none;
     width: 100%;
-    background-color: $main-text-color;
     padding: 14.5px 0;
+    border: none;
     border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $white-color;
+    letter-spacing: 0;
+
+    background-color: $main-text-color;
   }
 }
