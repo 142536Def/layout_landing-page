@@ -105,6 +105,16 @@
       font-weight: 700;
       line-height: 27px;
       color: $white-color;
+
+      background-color: $button-background;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+        box-shadow: 0 0 20px rgba(249, 137, 33, 0.7);
+      }
     }
 
     @media (min-width: 1260px) {

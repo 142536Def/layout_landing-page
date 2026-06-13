@@ -18,9 +18,12 @@
 
   &__top {
     position: sticky;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 28px 0;
   }
 
   &__close {
