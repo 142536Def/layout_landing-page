@@ -56,8 +56,10 @@
     transition: opacity 0.3s ease-in-out;
   }
 
-  &__item:hover .nav__number {
-    opacity: 1;
+  @media (min-width: 1260px) {
+    &__item:hover .nav__number {
+      opacity: 1;
+    }
   }
 
   &__phone {

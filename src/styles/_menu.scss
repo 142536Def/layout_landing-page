@@ -7,6 +7,7 @@
 
   width: 100%;
   height: 100vh;
+  padding: 28px 0;
 
   background-color: $white-color;
 
@@ -23,7 +24,15 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 28px 0;
+
+  }
+
+  &__logo img {
+    width: 152px;
+
+    @media (min-width: 744px) {
+      width: 228px;
+    }
   }
 
   &__close {
@@ -77,10 +86,6 @@
   }
 
   @media (min-width: 744px) {
-    padding: 32px 0;
-  }
-
-  @media (min-width: 744px) {
-    padding: 32px 0;
+    padding: 36px 0;
   }
 }
